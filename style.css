@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+    color: #222222;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    height: 96px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li img {
+    cursor: pointer;
+}
+
+.arrow {
+    width: 12px;
+    margin-left: 7px;
+    margin-top: 4px;
+}
+
+.p1,
+.p2 {
+    display: flex;
+    justify-content: center;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.p1 {
+    align-items: center;
+    font-size: 48px;
+    margin-top: 40px;
+    padding: 12px;
+}
+
+.p1 span {
+    margin: 12px;
+    font-weight: bold;
+}
+
+.p2 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button a {
+    width: 293px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00b6d1;
+    border-radius: 5px;
+    margin-top: 31px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.button a:hover {
+    background-color: #09a6bd;
+}
+
+.button button a:hover {
+    background-color: #09a6bd;
+}
+
+.ue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-top: 53px;
+    margin-right: 435px;
+}
+
+.ue img {
+    margin: 20px;
+}
+
+.ue span {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.downloads {
+    display: grid;
+    grid-template-areas: "d1 d2 d3"
+        "d4 d5 d6"
+        "d7 d8 d9"
+        "d10 empty empty";
+    justify-content: center;
+    gap: 23px;
+    margin-top: 21px;
+}
+
+.box {
+    width: 300px;
+    height: 160px;
+    background-color: #f9f9f9;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px 18px;
+    box-sizing: border-box;
+    font-size: 19px;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.blue,
+.green {
+    margin: 0 5px;
+    padding: 10px;
+    background-color: #00b6d1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bolder;
+    flex: 1;
+    cursor: pointer;
+}
+
+.blue:hover {
+    background-color: #09a6bd;
+}
+
+.green {
+    background-color: #5cb85c;
+}
+
+.green:hover {
+    background-color: #81c780;
+}
+
+.box p {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* Media Queries */
+@media screen and (max-width: 920px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+        font-size: 18px;
+        gap: 15px;
+    }
+
+    .p1 {
+        margin: 0px;
+        font-size: 28px;
+    }
+
+    .p2 {
+        font-size: 18px;
+    }
+
+    .ue {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-right: 50px;
+    }
+
+    .downloads {
+        grid-template-areas:
+            "d1"
+            "d2"
+            "d3"
+            "d4"
+            "d5"
+            "d6"
+            "d7"
+            "d8"
+            "d9"
+            "d10";
+        grid-template-columns: 1fr;
+        margin: 15px;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
